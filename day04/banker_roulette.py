@@ -8,9 +8,12 @@ names = names_string.split(", ")
 random_number = random.randint(0, len(names) - 1)
 who_pays = names[random_number]
 
-print(f"{who_pays} is going to buy the meal roday!")
+print(f"{who_pays} is going to buy the meal today!")
 
-# OTHER SOLUTION
+"""-----------
+OTHER SOLUTION
+-----------"""
+
 # Get the total number of items in list.
 num_items = len(names)
 # Generate random numbers between 0 and the last index.
