@@ -35,5 +35,19 @@ states_of_america.append("Angelaland")
 # extending with another list
 other_states = ["Ardurikiland", "Jack Bauer Land"]
 states_of_america.extend(other_states)
+# to avoid IndexError
+num_of_states = len(states_of_america)
+print(states_of_america[num_of_states - 1])
 
-print(states_of_america)  # Delaware, Pencilvania, Angelaland
+print(states_of_america)  # Delaware, Pencilvania, Angelaland, Ardurikiland, Jack Bauer Land
+
+# ---------------------
+
+# Nesting two lists
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)  # Two lists inside another list
+print(dirty_dozen[1][1])  # Takes the second list, and the second item from there.
