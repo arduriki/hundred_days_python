@@ -135,3 +135,5 @@ cython_debug/
 # Code editors
 .idea/
 .vscode/
+
+.DS_Store
