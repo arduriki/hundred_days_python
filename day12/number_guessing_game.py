@@ -1,17 +1,13 @@
 from art import logo
-import random
+from random import randint
 
 # FUNCTIONS
 def one_random_number():
     """Take a random number to play"""
     print("I'm thinking of a number between 1 and 100.")
-    numbers = []
-    for n in range(100):
-        numbers.append(n)
-    random.shuffle(numbers)
-    # Test:
+    number = randint(1, 100)
     # print(f"Pssst, the correct answer is {numbers[0]}")
-    return numbers[0]
+    return number
 
 
 def num_attempts():
