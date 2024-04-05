@@ -33,7 +33,7 @@ resources = {
 
 # TODO: 1 Prompt user
 def prompt_user():
-    """Ask the user and action."""
+    """Ask the user an action."""
     user_answer = input("What would you like? (espresso/latte/capuccino)\n")
     return user_answer
 
@@ -132,7 +132,6 @@ def check_money(money, user_answer, coffee_requirements, machine_resources):
         print(f"Here is your {user_answer}. Enjoy!")
     else:
         print("Sorry, that's not enough money. Money refunded.")
-
 
 
 coffee_machine(resources, MENU)
