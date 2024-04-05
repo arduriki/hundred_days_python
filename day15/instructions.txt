@@ -1,0 +1,27 @@
+1. Makes 3 hot flavours
+2. Coin operated:
+- Penny: 1 cent
+- Nickel: 5 cents
+- Dime: 10 cents
+- Quarter: 25 cents
+
+PROGRAM REQUIREMENTS
+1. Print report
+If user indicates 'report' in the 'what would you like' input,
+ a resources report must be shown.
+
+2. Check resources sufficient?
+- Report to the user if there's no more resources.
+
+3. Process coins.
+Please insert coins.
+How many quarters?
+How many dimes?
+How many nickles?
+How many pennies?
+Calculate the amount of change based on the cost of the coffee.
+Or warn if there isn't enough money.
+
+4. Check transaction successful?
+yes -> make the coffee
+subtract from the resources.
