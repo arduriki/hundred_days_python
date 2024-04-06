@@ -7,6 +7,7 @@ coffee_maker = CoffeeMaker()
 money_machine = MoneyMachine()
 
 machine_on = True
+
 while machine_on == True:
     options = menu.get_items()
     user_choose = input("Choose one: ")
@@ -18,6 +19,7 @@ while machine_on == True:
     elif user_choose == "report":
         print()
         coffee_maker.report()
+        money_machine.report()
     else:
         coffee_chosen = menu.find_drink(user_choose)
 
