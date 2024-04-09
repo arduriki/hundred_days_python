@@ -50,35 +50,31 @@ tim = t.Turtle()
 #     tim.color(random.choice(color_list))
 #     draw_shape(shape_side_n)
 
-# CHALLENGE: Random walk with random color
+
 t.colormode(255)
+
 
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    random_color = (r, g, b)
-    return random_color
+    color = (r, g, b)
+    return color
 
 
-
-directions = [0, 90, 180, 270]
+# # CHALLENGE: Random walk with random color
+# directions = [0, 90, 180, 270]
 tim.pensize(3)
 tim.speed("fastest")
 
-for _ in range(50):
-    tim.color(random_color())
-    tim.circle(100)
-    tim.left(10)
-
-tim.hideturtle()
-
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360 / size_of_gap)):
+        tim.color(random_color())
+        tim.circle(100)
+        tim.setheading(tim.heading() + size_of_gap)
 
 
-
-
-
-
+draw_spirograph(5)
 
 # Window stay
 screen = t.Screen()
